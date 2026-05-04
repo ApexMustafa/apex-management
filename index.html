@@ -1,45 +1,218 @@
-* HEADER */
-    border-radius: 50%;
-            <p>Class 6 to 12</p>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="google-site-verification" content="wq7G2EjQ0pCzeo_hQRnwU7uOCOB7oZFRQpftCAyp2jI" />
+<title>Apex Mind Coaching Center</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg,#e3f2fd,#ffffff);
+    font-style: italic;
+}
+
+/* ALL TEXT BOLD + ITALIC */
+*{
+    font-weight:bold;
+    font-style:italic;
+}
+
+/* HEADER */
+header{
+    text-align:center;
+    padding:40px;
+    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
+    color:white;
+}
+
+header img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    border:3px solid white;
+}
+
+/* MAIN NAME */
+header h1{
+    font-size:36px;
+    font-weight:900;
+    text-decoration:underline;
+    text-decoration-thickness:3px;
+}
+
+/* COACHING NAME BIG */
+.coaching-name{
+    font-size:32px;
+    font-weight:900;
+    text-decoration:underline;
+    margin-top:10px;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:30px;
+}
+
+.hero img{
+    width:220px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.hero h2{
+    font-weight:900;
+    text-decoration:underline;
+}
+
+/* COURSES */
+.courses{
+    text-align:center;
+    padding:30px;
+}
+
+.box{
+    display:inline-block;
+    width:240px;
+    margin:10px;
+    padding:15px;
+    background:white;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.box img{
+    width:100%;
+    height:140px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:10px;
+}
+
+/* SUBJECT */
+.subject{
+    font-weight:900;
+    font-size:20px;
+    margin-bottom:5px;
+    text-decoration:underline;
+}
+
+/* COLORS */
+.physics{ color:#1565c0; }
+.chemistry{ color:#d84315; }
+.math{ color:#6a1b9a; }
+.english{ color:#2e7d32; }
+.computer{
+    background: linear-gradient(90deg,#2196f3,#0d47a1);
+    padding:5px;
+    border-radius:6px;
+    color:white;
+}
+
+/* CONTACT */
+.contact{
+    text-align:center;
+    padding:30px;
+    background:white;
+}
+
+/* WHATSAPP */
+.whatsapp{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:14px;
+    border-radius:50%;
+    text-decoration:none;
+    font-size:20px;
+}
+
+/* EXTRA TEXT STYLE */
+.info{
+    font-weight:800;
+    margin-top:5px;
+    color:#333;
+}
+
+.highlight{
+    font-weight:900;
+    color:#1f1c2c;
+    font-size:18px;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <img src="logo.jpg" alt="Logo">
+    <h1>Muhammad Mustafa</h1>
+    <h2 class="coaching-name">Apex Mind Coaching Center</h2>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+    <img src="mustafa.jpg" alt="Sir Mustafa">
+    <h2>Sir Mustafa</h2>
+    <p class="highlight">Qualified & Experienced Teachers Available</p>
+    <p class="info">Quality Education for Bright Future</p>
+</div>
+
+<!-- COURSES -->
+<div class="courses" id="courses">
+    <h2>Our Courses</h2>
+
+    <div class="box">
+        <img src="physics.jpg" alt="Physics">
+        <div class="subject physics">Physics</div>
+        <p>Mastering Concepts of Motion, Energy & Laws of Nature</p>
     </div>
 
     <div class="box">
-        <img src="physics.jpg">
-        <h3>Physics</h3>
-        <p>Concept Based Learning</p>
+        <img src="chemistry.jpg" alt="Chemistry">
+        <div class="subject chemistry">Chemistry</div>
+        <p>Understanding Reactions, Elements & Chemical Processes</p>
     </div>
 
     <div class="box">
-        <img src="chemistry.jpg">
-        <h3>Chemistry</h3>
-        <p>Easy Understanding</p>
+        <img src="math.jpg" alt="Mathematics">
+        <div class="subject math">Mathematics</div>
+        <p>Building Strong Problem Solving & Logical Thinking Skills</p>
     </div>
 
     <div class="box">
-        <img src="english.jpg">
-        <h3>English</h3>
-        <p>Grammar & Speaking</p>
+        <img src="english.jpg" alt="English">
+        <div class="subject english">English</div>
+        <p>Improving Grammar, Communication & Writing Excellence</p>
     </div>
 
     <div class="box">
-        <img src="language.jpg">
-        <h3>Advance Language Course</h3>
-        <p>Spoken & Professional</p>
+        <img src="computer.jpg" alt="Computer Course">
+        <div class="subject computer">Computer Course</div>
+        <p>Web Development, MS Excel & Modern Digital Skills</p>
     </div>
+
 </div>
 
 <!-- CONTACT -->
 <div class="contact" id="contact">
     <h2>Contact Us</h2>
-    <p>📞 03313157340</p>
+    <p>📞 0331-3157340</p>
+    <p>📍 Sector 11 1/2 Gulshan-e-Zia, Orangi Town, Karachi, Street Number 5</p>
+    
+    <p class="highlight">⏰ Timing: 4:00 PM – 9:00 PM</p>
 </div>
 
-<!-- WhatsApp -->
+<!-- WHATSAPP -->
 <a class="whatsapp" href="https://wa.me/923313157340">💬</a>
-
-<footer>
-    <p>© 2026 Apex Mind Coaching Center</p>
-</footer>
 
 </body>
 </html>
