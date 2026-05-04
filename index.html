@@ -12,7 +12,6 @@ body{
     margin:0;
     font-family: Arial, sans-serif;
     background: linear-gradient(135deg,#e3f2fd,#ffffff);
-    font-style: italic;
 }
 
 /* ALL TEXT BOLD + ITALIC */
@@ -29,11 +28,11 @@ header{
     color:white;
 }
 
-/* LOGO FIX (BIG + CLEAR) */
+/* LOGO */
 header img{
     width:180px;
     height:auto;
-    border-radius:10px; /* circle hata diya */
+    border-radius:10px;
     border:3px solid white;
     object-fit:contain;
     background:white;
@@ -42,21 +41,20 @@ header img{
     margin:0 auto;
 }
 
-/* MAIN NAME */
+/* NAME */
 header h1{
     font-size:36px;
     font-weight:900;
     text-decoration:underline;
-    text-decoration-thickness:3px;
 }
 
-/* COACHING NAME (ONE LINE) */
+/* 🔥 SPLIT TITLE */
 .coaching-name{
     font-size:30px;
     font-weight:900;
-    text-decoration:underline;
     margin-top:10px;
-    white-space:nowrap;
+    text-align:center;
+    line-height:1.3;
 }
 
 /* HERO */
@@ -141,7 +139,7 @@ header h1{
     font-size:20px;
 }
 
-/* EXTRA TEXT */
+/* TEXT */
 .info{
     font-weight:800;
     margin-top:5px;
@@ -163,7 +161,12 @@ header h1{
 <header>
     <img src="logo.jpg" alt="Logo">
     <h1>Muhammad Mustafa</h1>
-    <h2 class="coaching-name">Apex Mind Coaching Center</h2>
+
+    <!-- 🔥 FIXED TITLE -->
+    <h2 class="coaching-name">
+        Apex Mind <br> Coaching Center
+    </h2>
+
 </header>
 
 <!-- HERO -->
