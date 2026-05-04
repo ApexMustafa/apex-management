@@ -24,16 +24,22 @@ body{
 /* HEADER */
 header{
     text-align:center;
-    padding:40px;
+    padding:50px 20px;
     background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
     color:white;
 }
 
+/* LOGO FIX (BIG + CLEAR) */
 header img{
-    width:100px;
-    height:100px;
-    border-radius:50%;
+    width:180px;
+    height:auto;
+    border-radius:10px; /* circle hata diya */
     border:3px solid white;
+    object-fit:contain;
+    background:white;
+    padding:8px;
+    display:block;
+    margin:0 auto;
 }
 
 /* MAIN NAME */
@@ -44,12 +50,13 @@ header h1{
     text-decoration-thickness:3px;
 }
 
-/* COACHING NAME BIG */
+/* COACHING NAME (ONE LINE) */
 .coaching-name{
-    font-size:32px;
+    font-size:30px;
     font-weight:900;
     text-decoration:underline;
     margin-top:10px;
+    white-space:nowrap;
 }
 
 /* HERO */
@@ -106,6 +113,7 @@ header h1{
 .chemistry{ color:#d84315; }
 .math{ color:#6a1b9a; }
 .english{ color:#2e7d32; }
+
 .computer{
     background: linear-gradient(90deg,#2196f3,#0d47a1);
     padding:5px;
@@ -133,7 +141,7 @@ header h1{
     font-size:20px;
 }
 
-/* EXTRA TEXT STYLE */
+/* EXTRA TEXT */
 .info{
     font-weight:800;
     margin-top:5px;
@@ -167,47 +175,46 @@ header h1{
 </div>
 
 <!-- COURSES -->
-<div class="courses" id="courses">
+<div class="courses">
     <h2>Our Courses</h2>
 
     <div class="box">
         <img src="physics.jpg" alt="Physics">
         <div class="subject physics">Physics</div>
-        <p>Mastering Concepts of Motion, Energy & Laws of Nature</p>
+        <p>Motion, Energy & Laws of Nature</p>
     </div>
 
     <div class="box">
         <img src="chemistry.jpg" alt="Chemistry">
         <div class="subject chemistry">Chemistry</div>
-        <p>Understanding Reactions, Elements & Chemical Processes</p>
+        <p>Reactions, Elements & Chemical Processes</p>
     </div>
 
     <div class="box">
         <img src="math.jpg" alt="Mathematics">
         <div class="subject math">Mathematics</div>
-        <p>Building Strong Problem Solving & Logical Thinking Skills</p>
+        <p>Problem Solving & Logical Thinking</p>
     </div>
 
     <div class="box">
         <img src="english.jpg" alt="English">
         <div class="subject english">English</div>
-        <p>Improving Grammar, Communication & Writing Excellence</p>
+        <p>Grammar & Communication Skills</p>
     </div>
 
     <div class="box">
         <img src="computer.jpg" alt="Computer Course">
         <div class="subject computer">Computer Course</div>
-        <p>Web Development, MS Excel & Modern Digital Skills</p>
+        <p>Web Development & Digital Skills</p>
     </div>
 
 </div>
 
 <!-- CONTACT -->
-<div class="contact" id="contact">
+<div class="contact">
     <h2>Contact Us</h2>
     <p>📞 0331-3157340</p>
-    <p>📍 Sector 11 1/2 Gulshan-e-Zia, Orangi Town, Karachi, Street Number 5</p>
-    
+    <p>📍 Sector 11 1/2 Gulshan-e-Zia, Orangi Town, Karachi</p>
     <p class="highlight">⏰ Timing: 4:00 PM – 9:00 PM</p>
 </div>
 
