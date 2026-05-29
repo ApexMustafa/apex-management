@@ -1,154 +1,211 @@
-<!DOCTYPE html>
-<html>
+                <!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="google-site-verification" content="wq7G2EjQ0pCzeo_hQRnwU7uOCOB7oZFRQpftCAyp2jI" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Vertex Institute</title>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <style>
-
-body{
-    margin:0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg,#e3f2fd,#ffffff);
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
 }
 
-/* ALL TEXT BOLD + ITALIC */
-*{
-    font-weight:bold;
-    font-style:italic;
+body{
+  background:#f4f6f9;
 }
 
 /* HEADER */
 header{
-    text-align:center;
-    padding:50px 20px;
-    background: linear-gradient(135deg,#0f2027,#203a43,#2c5364);
-    color:white;
+  background:linear-gradient(135deg,#0b3d91,#062a66);
+  color:white;
+  text-align:center;
+  padding:25px;
 }
 
-/* LOGO */
 header img{
-    width:180px;
-    height:auto;
-    border-radius:10px;
-    border:3px solid white;
-    object-fit:contain;
-    background:white;
-    padding:8px;
-    display:block;
-    margin:0 auto;
+  width:80px;
+  height:80px;
+  border-radius:50%;
+  border:2px solid white;
+  margin-bottom:10px;
 }
 
-/* NAME */
 header h1{
-    font-size:36px;
-    font-weight:900;
-    text-decoration:underline;
+  font-size:36px;
+  font-weight:bold;
+}
+
+header p{
+  margin-top:5px;
+  color:#dbe9ff;
+  font-weight:bold;
+}
+
+/* NAV */
+nav{
+  background:#081f4d;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  padding:12px;
+  flex-wrap:wrap;
+}
+
+nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+nav a:hover{
+  color:yellow;
 }
 
 /* HERO */
 .hero{
-    text-align:center;
-    padding:30px;
-}
-
-.hero img{
-    width:220px;
-    border-radius:15px;
-    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+  text-align:center;
+  padding:60px 20px;
+  background:linear-gradient(to right,#e8f0ff,#ffffff);
 }
 
 .hero h2{
-    font-weight:900;
-    text-decoration:underline;
+  font-size:32px;
+  color:#0b3d91;
+  font-weight:bold;
+}
+
+.hero p{
+  font-size:18px;
+  margin-top:10px;
+  color:#333;
+}
+
+.hero img{
+  width:100%;
+  max-width:500px;
+  border-radius:10px;
+  margin-top:20px;
+}
+
+.btn{
+  margin-top:20px;
+  padding:14px 30px;
+  background:linear-gradient(135deg,#0b3d91,#062a66);
+  color:white;
+  border:none;
+  border-radius:8px;
+  cursor:pointer;
+  font-size:16px;
+  font-weight:bold;
+  transition:0.3s;
+}
+
+.btn:hover{
+  transform:scale(1.05);
 }
 
 /* COURSES */
+.section-title{
+  text-align:center;
+  margin-top:40px;
+  font-size:28px;
+  color:#0b3d91;
+  font-weight:bold;
+}
+
 .courses{
-    text-align:center;
-    padding:30px;
+  display:flex;
+  justify-content:center;
+  gap:20px;
+  flex-wrap:wrap;
+  padding:30px;
 }
 
-.box{
-    display:inline-block;
-    width:240px;
-    margin:10px;
-    padding:15px;
-    background:white;
-    border-radius:12px;
-    box-shadow:0 5px 15px rgba(0,0,0,0.15);
+.card{
+  width:260px;
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 0 15px rgba(0,0,0,0.1);
+  text-align:center;
+  transition:0.3s;
 }
 
-.box img{
-    width:100%;
-    height:140px;
-    object-fit:cover;
-    border-radius:10px;
-    margin-bottom:10px;
+.card:hover{
+  transform:scale(1.05);
 }
 
-/* SUBJECT */
-.subject{
-    font-weight:900;
-    font-size:20px;
-    margin-bottom:5px;
-    text-decoration:underline;
+.card img{
+  width:100%;
+  height:140px;
+  border-radius:8px;
+  margin-bottom:10px;
 }
 
-/* COLORS */
-.physics{ color:#1565c0; }
-.chemistry{ color:#d84315; }
-.math{ color:#6a1b9a; }
-.english{ color:#2e7d32; }
-
-.computer{
-    background: linear-gradient(90deg,#2196f3,#0d47a1);
-    padding:5px;
-    border-radius:6px;
-    color:white;
+.card h3{
+  color:#0b3d91;
+  font-weight:bold;
 }
 
 /* CONTACT */
 .contact{
-    text-align:center;
-    padding:30px;
-    background:white;
+  text-align:center;
+  padding:50px 20px;
+  background:#fff;
 }
 
-/* WHATSAPP */
+.contact p{
+  font-size:18px;
+  margin:8px 0;
+  font-weight:bold;
+}
+
+.contact b{
+  color:#0b3d91;
+}
+
+input, textarea{
+  width:80%;
+  max-width:500px;
+  padding:12px;
+  margin:10px 0;
+  border:2px solid #0b3d91;
+  border-radius:8px;
+  font-size:15px;
+  outline:none;
+}
+
+input:focus, textarea:focus{
+  box-shadow:0 0 8px rgba(11,61,145,0.3);
+}
+
 .whatsapp{
-    position:fixed;
-    bottom:20px;
-    right:20px;
-    background:#25D366;
-    color:white;
-    padding:14px;
-    border-radius:50%;
-    text-decoration:none;
-    font-size:20px;
+  display:inline-block;
+  margin-top:15px;
+  padding:12px 25px;
+  background:#25D366;
+  color:white;
+  text-decoration:none;
+  border-radius:8px;
+  font-weight:bold;
 }
 
-/* TEXT */
-.info{
-    font-weight:800;
-    margin-top:5px;
-    color:#333;
+.whatsapp:hover{
+  transform:scale(1.05);
 }
 
-.highlight{
-    font-weight:900;
-    color:#1f1c2c;
-    font-size:18px;
+/* FOOTER */
+footer{
+  background:#0b3d91;
+  color:white;
+  text-align:center;
+  padding:15px;
+  margin-top:20px;
+  font-weight:bold;
 }
-
-.slogan{
-    font-size:18px;
-    margin-top:10px;
-    color:#f1f1f1;
-}
-
 </style>
 </head>
 
@@ -156,90 +213,111 @@ header h1{
 
 <!-- HEADER -->
 <header>
-    <img src="logo.jpg" alt="Logo">
-
-    <h1>The Vertex Institute</h1>
-
-    <p class="slogan">
-        Create Your Future & Achieve Success In Life
-    </p>
-
+  <img src="logo.jpg" alt="Logo">
+  <h1>The Vertex Institute</h1>
+  <p>Managed & Supervised by Sir Mustafa</p>
 </header>
 
+<!-- NAV -->
+<nav>
+  <a href="#home">Home</a>
+  <a href="#courses">Courses</a>
+  <a href="#contact">Contact</a>
+</nav>
+
 <!-- HERO -->
-<div class="hero">
-    <img src="mustafa.jpg" alt="Sir Mustafa">
+<section class="hero" id="home">
+  <h2>Admissions Open Now</h2>
+  <p>Best Coaching Institute for English, Computer & School Courses</p>
 
-    <h2>Sir Mustafa</h2>
+  <button class="btn" onclick="applyNow()">Apply Now</button>
+  <p id="msg"></p>
 
-    <p class="highlight">
-        Qualified & Experienced Teachers Available
-    </p>
-
-    <p class="info">
-        Quality Education For A Bright Future
-    </p>
-</div>
+  <img src="class.jpg" alt="Class Image">
+</section>
 
 <!-- COURSES -->
-<div class="courses">
+<h2 class="section-title">Our Courses</h2>
 
-    <h2>Our Courses</h2>
+<section class="courses" id="courses">
 
-    <div class="box">
-        <img src="physics.jpg" alt="Physics">
-        <div class="subject physics">Physics</div>
-        <p>Motion, Energy & Laws of Nature</p>
-    </div>
+  <div class="card">
+    <img src="class.jpg">
+    <h3>English Language</h3>
+    <p>Basic to advanced English speaking & grammar.</p>
+  </div>
 
-    <div class="box">
-        <img src="chemistry.jpg" alt="Chemistry">
-        <div class="subject chemistry">Chemistry</div>
-        <p>Reactions, Elements & Chemical Processes</p>
-    </div>
+  <div class="card">
+    <img src="class.jpg">
+    <h3>Advanced English</h3>
+    <p>Fluency, writing & communication skills.</p>
+  </div>
 
-    <div class="box">
-        <img src="math.jpg" alt="Mathematics">
-        <div class="subject math">Mathematics</div>
-        <p>Problem Solving & Logical Thinking</p>
-    </div>
+  <div class="card">
+    <img src="class.jpg">
+    <h3>Class 9 & 10</h3>
+    <p>All subjects complete preparation.</p>
+  </div>
 
-    <div class="box">
-        <img src="english.jpg" alt="English">
-        <div class="subject english">English</div>
-        <p>Grammar & Communication Skills</p>
-    </div>
+  <div class="card">
+    <img src="class.jpg">
+    <h3>Computer Course</h3>
+    <p>MS Office & IT basic training.</p>
+  </div>
 
-    <div class="box">
-        <img src="computer.jpg" alt="Computer Course">
-        <div class="subject computer">Computer Course</div>
-        <p>Web Development & Digital Skills</p>
-    </div>
-
-</div>
+</section>
 
 <!-- CONTACT -->
-<div class="contact">
+<h2 class="section-title">Contact Details</h2>
 
-    <h2>Contact Us</h2>
+<section class="contact" id="contact">
 
-    <p>📞 0331-3157340</p>
+  <p><b>📞 Phone:</b> 0331-3157340</p>
+  <p><b>📍 Address:</b> Gulshan-e-Zia Sector 11 1/2, Orangi Town, Karachi</p>
 
-    <p>
-        📍 Sector 11 1/2 Gulshan-e-Zia,
-        Orangi Town, Karachi
-    </p>
+  <a class="whatsapp" href="https://wa.me/923313157340" target="_blank">
+    💬 Chat on WhatsApp
+  </a>
 
-    <p class="highlight">
-        ⏰ Timing: 4:00 PM – 9:00 PM
-    </p>
+  <br><br>
 
-</div>
+  <input type="text" id="name" placeholder="Your Name">
+  <input type="number" id="phone" placeholder="Phone Number">
+  <textarea id="message" rows="4" placeholder="Your Message"></textarea>
 
-<!-- WHATSAPP -->
-<a class="whatsapp" href="https://wa.me/923313157340">
-💬
-</a>
+  <br>
+
+  <button class="btn" onclick="sendWhatsApp()">Send Message</button>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+  © 2026 The Vertex Institute | Managed by Sir Mustafa
+</footer>
+
+<!-- SCRIPT -->
+<script>
+function applyNow(){
+  document.getElementById("msg").innerHTML =
+  "✅ Application Received Successfully!";
+}
+
+function sendWhatsApp(){
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let message = document.getElementById("message").value;
+
+  let url = "https://wa.me/923313157340?text="
+  + "🏫 The Vertex Institute Admission%0a"
+  + "------------------------%0a"
+  + "Name: " + name + "%0a"
+  + "Phone: " + phone + "%0a"
+  + "Message: " + message;
+
+  window.open(url, "_blank");
+}
+</script>
 
 </body>
 </html>
