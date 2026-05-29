@@ -3,6 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>The Vertex Institute</title>
 
 <style>
@@ -27,25 +28,28 @@ header{
   padding:25px;
 }
 
+/* LOGO */
+
 header img{
-  width:130px;
-  height:130px;
-  border-radius:50%;
-  object-fit:cover;
+  width:170px;
+  height:auto;
+  border-radius:12px;
   border:3px solid white;
-  margin-bottom:10px;
+  margin-bottom:12px;
 }
+
+/* TITLE */
 
 header h1{
   font-size:38px;
   font-weight:bold;
-  white-space:nowrap;
 }
 
 header p{
   margin-top:5px;
   color:#dbe9ff;
   font-weight:bold;
+  font-size:18px;
 }
 
 /* NAVBAR */
@@ -63,6 +67,7 @@ nav a{
   color:white;
   text-decoration:none;
   font-weight:bold;
+  font-size:17px;
 }
 
 nav a:hover{
@@ -78,7 +83,7 @@ nav a:hover{
 }
 
 .hero h2{
-  font-size:32px;
+  font-size:34px;
   color:#0b3d91;
   font-weight:bold;
 }
@@ -92,7 +97,7 @@ nav a:hover{
 .hero img{
   width:100%;
   max-width:500px;
-  border-radius:10px;
+  border-radius:12px;
   margin-top:20px;
 }
 
@@ -119,7 +124,7 @@ nav a:hover{
 .section-title{
   text-align:center;
   margin-top:40px;
-  font-size:28px;
+  font-size:30px;
   color:#0b3d91;
   font-weight:bold;
 }
@@ -154,6 +159,7 @@ nav a:hover{
 .card h3{
   color:#0b3d91;
   font-weight:bold;
+  margin-bottom:8px;
 }
 
 /* CONTACT */
@@ -161,7 +167,7 @@ nav a:hover{
 .contact{
   text-align:center;
   padding:50px 20px;
-  background:#fff;
+  background:white;
 }
 
 .contact p{
@@ -214,7 +220,6 @@ footer{
 
 header h1{
   font-size:28px;
-  white-space:normal;
 }
 
 .hero h2{
@@ -223,6 +228,10 @@ header h1{
 
 .card{
   width:90%;
+}
+
+header img{
+  width:140px;
 }
 
 }
@@ -236,7 +245,7 @@ header h1{
 
 <header>
 
-<img src="mustafa.jpg" alt="Sir Mustafa">
+<img src="logo.jpg" alt="Logo">
 
 <h1>The Vertex Institute</h1>
 
@@ -270,7 +279,7 @@ Apply Now
 
 <p id="msg"></p>
 
-<img src="mustafa.jpg" alt="Institute Image">
+<img src="mustafa.jpg" alt="Mustafa Image">
 
 </section>
 
@@ -282,7 +291,7 @@ Apply Now
 
 <div class="card">
 
-<img src="mustafa.jpg" alt="English">
+<img src="english.jpg" alt="English">
 
 <h3>English Language</h3>
 
@@ -294,7 +303,7 @@ Basic to advanced English speaking & grammar.
 
 <div class="card">
 
-<img src="mustafa.jpg" alt="Advanced English">
+<img src="advanced.jpg" alt="Advanced English">
 
 <h3>Advanced English</h3>
 
@@ -306,7 +315,7 @@ Fluency, writing & communication skills.
 
 <div class="card">
 
-<img src="mustafa.jpg" alt="Class 9 & 10">
+<img src="school.jpg" alt="Class 9 & 10">
 
 <h3>Class 9 & 10</h3>
 
@@ -318,7 +327,7 @@ All subjects complete preparation.
 
 <div class="card">
 
-<img src="mustafa.jpg" alt="Computer">
+<img src="computer.jpg" alt="Computer">
 
 <h3>Computer Course</h3>
 
@@ -353,22 +362,13 @@ target="_blank">
 
 <br><br>
 
-<input type="text"
-id="name"
-placeholder="Your Name">
-
+<input type="text" id="name" placeholder="Your Name">
 <br>
 
-<input type="number"
-id="phone"
-placeholder="Phone Number">
-
+<input type="number" id="phone" placeholder="Phone Number">
 <br>
 
-<textarea id="message"
-rows="4"
-placeholder="Your Message"></textarea>
-
+<textarea id="message" rows="4" placeholder="Your Message"></textarea>
 <br>
 
 <button class="btn" onclick="sendWhatsApp()">
@@ -380,9 +380,7 @@ Send Message
 <!-- FOOTER -->
 
 <footer>
-
 © 2026 The Vertex Institute | Managed by Sir Mustafa
-
 </footer>
 
 <!-- SCRIPT -->
@@ -390,22 +388,15 @@ Send Message
 <script>
 
 function applyNow(){
-
-document.getElementById("msg").innerHTML =
-"✅ Application Received Successfully!";
-
+  document.getElementById("msg").innerHTML =
+  "✅ Application Received Successfully!";
 }
 
 function sendWhatsApp(){
 
-let name =
-document.getElementById("name").value;
-
-let phone =
-document.getElementById("phone").value;
-
-let message =
-document.getElementById("message").value;
+let name = document.getElementById("name").value;
+let phone = document.getElementById("phone").value;
+let message = document.getElementById("message").value;
 
 let url =
 "https://wa.me/923313157340?text="
